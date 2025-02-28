@@ -1,0 +1,16 @@
+.show.question {
+    font-size: 18px;  /* 文字サイズの変更 */
+    line-height: 1.6;  /* 行間の設定 */
+  }
+  
+  .show.question h2 {
+    font-size: 20px;
+    margin-top: 30px; /* お悩み内容の上の余白 */
+    margin-bottom: 5px; /* タイトルの下の余白*/
+  }
+  
+  .show.question p {
+    font-size: 15px;
+    margin-top: 5px; /* 質問内容の上の余白*/
+    margin-bottom: 10px; /* 各段落の間隔を適度に設定 */
+  }

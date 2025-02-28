@@ -1,0 +1,159 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: "Noto Sans JP", sans-serif;
+   background-color: #fffaf0; /* クリーム色の背景 */
+   color: #4a2c2a; /* 落ち着いた茶色 */
+ }
+ 
+ header {
+   background-color: #ff7f50; /* コーラルオレンジ */
+   height: 90px;
+   font-weight: bold;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+ }
+ 
+ header a {
+   color: #8b4513; /* チョコレート色 */
+   text-decoration: none;
+   font-weight: bold;
+ }
+ 
+ header h1 {
+   color: white;
+   font-size: 24px;
+ }
+ 
+ .header-list {
+   display: flex;
+   align-items: center;
+ }
+ 
+ header ul {
+   display: flex;
+ }
+ 
+ header li {
+   list-style: none;
+   margin-right: 30px;
+   font-size: 18px;
+ }
+ 
+ header li:last-child {
+   margin-right: 0;
+ }
+ 
+ header a:hover {
+   color: #5a2a1c; /* 少し濃い茶色に */
+ }
+ 
+ button {
+   background-color: #ffa07a; /* サーモンピンク */
+   border: none;
+   padding: 10px 20px;
+   color: white;
+   font-size: 16px;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ button:hover {
+   background-color: #e6735c; /* 少し暗めのオレンジ */
+ }
+ footer {
+    color: white;
+    height: 30px;
+    background-color: #000;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: flex-end;
+  }
+
+  h1 {
+    font-size: 36px;  /* お好みのサイズに調整 */
+  }
+  
+  h3 {
+    font-size: 20px;  /* お好みのサイズに調整 */
+  }
+
+
+
+
+
+  .questions-container {
+    display: flex; /* flexboxレイアウトを使用 */
+    flex-wrap: wrap; /* 要素が横に並ぶが、次の行に折り返す */
+    gap: 20px; /* 各要素の間に20pxの間隔を空ける */
+  }
+
+
+  .question h2 {
+    font-size: 1.5em; /* タイトルを少し大きく表示 */
+    margin-bottom: 100px; /* タイトルの下に10pxの余白を空ける */
+  }
+
+  .question p {
+    font-size: 0.75em; /* デフォルトのサイズを適用 */
+    color: #333; /* 文字色 */
+    margin-bottom: 5px; /* 各段落に少し余白を加える */
+  }
+
+
+  /* button_toで生成されたフォームのスタイルをリセット */
+form {
+  display: inline; /* フォームをインライン表示に変更 */
+  margin: 0; /* マージンをゼロに */
+  padding: 0; /* パディングをゼロに */
+  border: none; /* 枠線を削除 */
+  background: none; /* 背景を削除 */
+}
+
+/* ボタンのスタイル */
+button {
+  background-color: #ffa07a;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f56c4d; /* 少しシックなオレンジ */
+}
+
+
+ 
+  

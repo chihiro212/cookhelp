@@ -1,0 +1,21 @@
+<h1>ようこそ！おうちごはん相談室へ</h1>
+<h3>質問詳細ページ</h3>
+
+<div class="show question">
+  <h2><strong>タイトル:</strong><%= @question.title %></h2>
+  <p><strong>お悩み内容:</strong><%= @question.content %></p>
+  
+ 
+  <% if @question.image.attached? %> 
+    <%= image_tag url_for(@question.image), size: "300x300" %> 
+  <% end %>
+   
+  <p><strong>回答コメント:</strong><%= @question.answer %></p>
+  <p><%= @question.created_at.strftime("%Y年%m月%d日 %H:%M") %></p>
+</div>
+
+<!-- 「このお悩みに回答する」リンクを回答の下に配置 -->
+<%= link_to "このお悩みへの回答を追加", edit_question_path(@question) %>
+
+<%= link_to "質問一覧に戻る", questions_path %>
+

@@ -1,0 +1,94 @@
+.header-buttons {
+  display: flex;
+  justify-content: space-between; /* 左右に要素を配置 */
+  align-items: center;
+  width: 100%; /* 横幅いっぱいにする */
+  padding: 10px 20px;
+}
+
+.header-buttons .left {
+  margin-right: auto; /* 左寄せ */
+}
+
+.header-buttons .right {
+  margin-left: auto; /* 右寄せ */
+}
+
+
+.tweets-container {
+    width: 80%; /* 全体の幅を指定 */
+    margin: 20px auto; /* 中央揃えにする */
+  }
+  
+  .tweet {
+    display: block; /* 各要素を縦並びに */
+    margin-bottom: 20px; /* 各質問の間に余白を追加 */
+    padding: 10px; /* 内側の余白 */
+    border: 1px solid #ccc; /* 枠線を追加 */
+    border-radius: 8px; /* 角を丸くする */
+    background-color: #f9f9f9; /* 背景色 */
+  }
+  
+  .tweet h2 {
+    font-size: 1.5em; /* タイトルの大きさ */
+    margin-bottom: 10px; /* タイトルの下に余白 */
+  }
+  
+  .tweet p {
+    font-size: 1em; /* 本文のフォントサイズ */
+    margin-bottom: 10px; /* 各段落の下に余白 */
+  }
+  
+  .tweet a {
+    color: #007bff; /* リンク色 */
+    text-decoration: none;
+  }
+  
+  .tweet a:hover {
+    text-decoration: underline; /* ホバー時に下線を追加 */
+  }
+  
+  .tweets-container button {
+    font-size: 12px;  /* ボタンの文字サイズ */
+    padding: 5px 10px;  /* ボタンの内側の余白 */
+    background-color: #ffa07a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tweets-container button:hover {
+    background-color: #e6735c;
+  }
+
+
+/* 質問内容と回答内容を区別 */
+.content {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;  /* 質問の背景色を薄く */
+    border-radius: 5px;
+}
+
+.answer {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;  /* 回答の背景色をさらに薄く */
+    border-radius: 5px;
+}
+
+
+
+  /* リンクの色を統一 */
+a {
+    color: #8b4513; /* チョコレート色に統一 */
+    text-decoration: none; /* 下線を消す */
+  }
+  
+  /* リンクにホバーしたときの色を変更 */
+  a:hover {
+    color: #5a2a1c; /* 少し濃い茶色に変化 */
+    text-decoration: underline; /* ホバー時に下線を追加 */
+  }
+  

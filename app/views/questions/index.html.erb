@@ -1,0 +1,46 @@
+<h1>ようこそ！おうちごはん相談室へ</h1>
+<h3>一覧ぺージ</h3>
+
+<div class="header-buttons">
+  <div class="left">
+    <%= link_to "新しく投稿する", new_question_path %>
+  </div>
+
+  <div class="right">
+    <% unless user_signed_in? %>
+      <%= link_to "ログイン", questions_path %>
+      <%= link_to "新規登録", new_user_registration_path %>
+    <% else %>
+      <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="tweets-container">
+  <% @questions.each do |q| %>
+    <div class="tweet">
+      <h2><%= q.title %></h2>
+
+      <div class="content">
+        <p><strong>質問:</strong> <%= q.content %></p>
+      </div>
+
+      
+        <% if q.image.attached? %>
+            <%= image_tag q.image, size: '250x200'%>
+        <% end %>
+     
+      
+      <div class="answer">
+        <p><strong>回答:</strong> <%= q.answer %></p>
+      </div>
+      
+      <%= link_to "投稿の詳細へ", question_path(q) %><br>
+      <%= link_to "この投稿に回答する", edit_question_path(q), class: "answer-link" %><br>
+      <%= button_to "削除する", question_path(q), method: :delete, data: { confirm: "本当に削除しますか？" } %>
+      
+    </div>
+  <% end %>
+</div>
+

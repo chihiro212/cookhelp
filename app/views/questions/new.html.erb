@@ -1,0 +1,30 @@
+<h1>ようこそ！おうちごはん相談室へ</h1>
+<h3>自炊に関する悩みなど何でも投稿してね</h3>
+
+<%= form_for @question do |f| %>
+  <div class="field">
+    <%= f.label :title, "質問タイトル" %>
+    <%= f.text_field :title, size: 30, placeholder: "質問のタイトルを入力してください" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content, "質問内容" %>
+    <%= f.text_area :content, size: "30x5", placeholder: "質問の詳細内容を入力してください" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "画像" %>
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :answer, "お悩みへの回答" %>
+    <%= f.text_area :answer, size: "30x5", placeholder: "回答内容を入力してください" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "投稿する", class: "submit-button" %>
+  </div>
+<% end %>
+
+<%= link_to "お悩み一覧に戻る", questions_path, class: "back-link" %>

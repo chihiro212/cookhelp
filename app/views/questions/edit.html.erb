@@ -1,0 +1,12 @@
+<%= form_for @question do |f| %>
+     <div class="field">
+    <%= f.label :お悩みへの回答  %>
+    <%= f.text_area :answer, :size => "30x2" %>
+     </div>
+   
+    <%= f.submit "このお悩みに回答する" %><br>
+  <% end %>
+
+
+ <%= link_to "投稿の詳細へ", question_path(@question) %><br>
+ <%= link_to "一覧ページへ戻る", questions_path %>
